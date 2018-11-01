@@ -10,7 +10,7 @@
               </a>
               <div class="d-md-flex">
                   <a href="./index.html">
-                      <button class="btn btn-primary" type="button">Save</button>
+                      <button class="btn btn-primary" (click)="createCampagin()" type="button">Save</button>
                   </a>
               </div>
           </div>
@@ -27,12 +27,12 @@
                               <div class="col-md-6">
                                   <div class="form-group">
                                       <label for="name">Fullname</label>
-                                      <input type="text" class="form-control form-control-alternative" id="name" placeholder="Gnanavel" />
+                                      <input  [(ngModel)]="fullName"  name ="fullName" type="text" class="form-control form-control-alternative" id="name" placeholder="Gnanavel" />
                                   </div>
                               </div>
                               <div class="col-md-6">
                                   <div class="form-group">
-                                      <label for="name">Media Selection Option</label>
+                                      <label [(ngModel)]="media" name ="media" for="name">Media Selection Option</label>
                                       <select class="form-control form-control-alternative" id="media_selection">
                                           <option>- Select -</option>
                                           <option>Sequential</option>
@@ -45,7 +45,7 @@
                           <div class="row">
                               <div class="col-md-6">
                                   <div class="form-group">
-                                      <label for="name">Brand</label>
+                                      <label [(ngModel)]="brand" name ="brand" for="name">Brand</label>
                                       <select class="form-control form-control-alternative" id="brand">
                                           <option>Apple</option>
                                           <option>Samsung</option>
@@ -57,7 +57,7 @@
                               </div>
                               <div class="col-md-6">
                                   <div class="form-group">
-                                      <label for="name">Sub Brand</label>
+                                      <label [(ngModel)]="subBrand" name ="subBrand" for="name">Sub Brand</label>
                                       <select class="form-control form-control-alternative" id="sub_brand">
                                           <option>iPhone 6</option>
                                           <option>iPhone 7</option>

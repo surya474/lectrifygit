@@ -12,4 +12,7 @@ export class CreatecampaignComponent implements OnInit {
   ngOnInit() {
   }
 
+  createCampagin(){
+    
+  }
 }

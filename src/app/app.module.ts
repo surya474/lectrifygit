@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './route/app.route';
 import { HomecomponentComponent } from './components/homecomponent/homecomponent.component';
@@ -16,6 +16,7 @@ import { MatInputModule, MatIconModule } from '@angular/material';
 import { InventorymanageComponent } from './components/inventortyManagement/inventorymanage/inventorymanage.component';
 import { ContentlibhomeComponent } from './components/ContentLibrary/contentlibhome/contentlibhome.component';
 import { CreatecontentComponent } from './components/ContentLibrary/createcontent/createcontent.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,9 @@ import { CreatecontentComponent } from './components/ContentLibrary/createconten
     MatFormFieldModule,
     MatPaginatorModule ,
     MatInputModule,
-    MatIconModule
+    MatIconModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
