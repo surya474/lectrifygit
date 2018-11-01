@@ -13,6 +13,9 @@ import {MatTableModule} from '@angular/material/table';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatInputModule, MatIconModule } from '@angular/material';
+import { InventorymanageComponent } from './components/inventortyManagement/inventorymanage/inventorymanage.component';
+import { ContentlibhomeComponent } from './components/ContentLibrary/contentlibhome/contentlibhome.component';
+import { CreatecontentComponent } from './components/ContentLibrary/createcontent/createcontent.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +24,10 @@ import { MatInputModule, MatIconModule } from '@angular/material';
     HeadderComponent,
     CampaignmanagementComponent,
     LoginComponent,
-    CreatecampaignComponent
+    CreatecampaignComponent,
+    InventorymanageComponent,
+    ContentlibhomeComponent,
+    CreatecontentComponent
   ],
   imports: [
     BrowserModule,   

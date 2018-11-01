@@ -1,0 +1,195 @@
+
+    <!-- Main content -->
+    <div class="main-content">
+        <!-- Top navbar -->
+        <nav class="navbar navbar-top navbar-expand-md navbar-dark" id="navbar-main">
+            <div class="container-fluid">
+                <!-- Brand -->
+                <a class="h2 mb-0 d-none d-lg-inline-block" href="#">
+                    <i class="fas fa-arrow-left"></i>
+                    Immersive Ad Design
+                </a><br>
+				
+                <!-- <div class="d-md-flex"> -->
+                    <!-- <a href="./index.html"> -->
+                        <!-- <button class="btn btn-primary" type="button">Save</button> -->
+                    <!-- </a> -->
+                <!-- </div> -->
+            </div>
+		</nav>
+		
+        <!-- Header -->
+        <div class="pb-8 pt-5 pt-md-8">
+            <!-- Page content -->
+			
+            <div class="container-fluid mt--7">      
+                <div class="row mt-5">
+                    <div class="col-xl-12 mb-5 mb-xl-0">
+                        <!-- CREATE FORM STARTS -->
+                        <form name="create-form" id="create-form" method="POST">
+							<p>How to: <span class="font-weight-bold">1. </span>Add Blocks <span class="font-weight-bold">2.</span> Define Split <span class="font-weight-bold">3.</span> Height will auto adjust to fit contents</p>
+                            <div class="row">
+								<div class="col-md-3">
+                                    <div class="form-group">
+										<label for="name">Title</label>
+                                        <input type="text" class="form-control form-control-alternative" id="name" placeholder="Enter Title" />
+                                    </div>
+                                </div>
+								<div class="col-md-3">
+                                    <div class="form-group">
+										<label for="name">Category</label>
+                                        <select class="form-control form-control-alternative" id="media_selection">
+                                            <option>-Select-</option>
+                                            <option>Category 01</option>
+                                            <option>Category 02</option>
+                                            <option>Category 03</option>
+                                            <option>Category 04</option>
+                                        </select>	
+                                    </div>
+                                </div>
+								<div class="col-md-3">
+                                    <div class="form-group">
+										<label for="name">Sub-Category</label>
+                                        <select class="form-control form-control-alternative" id="media_selection">
+                                            <option>-Select-</option>
+                                            <option>Sub-Category 01</option>
+                                            <option>Sub-Category 02</option>
+                                            <option>Sub-Category 03</option>
+                                            <option>Sub-Category 04</option>
+                                        </select>	
+                                    </div>
+                                </div>
+								<!-- <div class="d-md-flex">
+									<a href="#">
+										<button class="btn btn-primary" style="margin:33px 20px 0px 0px;" type="button">Preview</button>
+									</a>
+								</div> -->
+								<div class="d-md-flex">
+									<a href="edit-content.html">
+										<button class="btn btn-primary" style="margin:33px 0px 0px 0px;" type="button">Save</button>
+									</a>
+								</div>
+                                </div>
+								<!--<div class="row">
+									<div class="col-md-3">
+									<div class="" onclick="myFunction()">
+										<div class="bg-dark adblock card">
+											Ad block
+										</div>
+									</div>
+									</div>
+									
+									<!------ when click ad block button-->
+									<!--<div class="col-md-8" id="myDIV" style="display:none;">
+										<div class="adblock-carea card">
+										<div class="row">
+											<div class="col-md-3 img-upload bg-white">
+												<center>
+													<a href="#" data-toggle="modal" data-target="#exampleModal">
+														<span class="fa fa-file" aria-hidden="true"></span><br>
+														<span>Images</span>
+													</a>
+												</center>
+											</div>
+											<div class="col-md-3 img-upload bg-white">
+												<center>
+													<a href="#" data-toggle="modal" data-target="#exampleModal" class="dropdown-item">
+														<span class="fa fa-video" aria-hidden="true"></span><br>
+														<span>Video</span>
+													</a>
+												</center>
+											</div>
+											
+										</div>
+										</div>
+									</div>
+									
+									<!---- after clock add in Modal-->
+								<!--	<div class="col-md-8" id="myDIV1" style="display:none;">
+										<div class="bg-light" style="">
+											<video width="100%" controls>
+											  <source src="assets/img/vid/mov_bbb.mp4" type="video/mp4">
+											  Your browser does not support HTML5 video.
+											</video>
+											<div class="row">
+												<div class="col-md-6" style="">
+													<img class="img-responsive" alt="Image placeholder" src="./assets/img/theme/team-4-800x800.jpg">
+												</div>
+												<div class="col-md-5 pad80">
+													<h3>Lorem ipsum dolor sit amet<span><b>consectetur adipiscing elit</b></span></h3>
+													<p class="text-justify">Nunc feugiat auctor magna in dignissim. Mauris ornare pretium leo eget pellentesque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia sollicitudin sagittis.</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									
+								</div> -->
+								
+								
+								<!-- Modal -->
+								<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+								  <div class="modal-dialog" role="document">
+									<div class="modal-content">
+									  <div class="modal-header">
+										<h3 class="modal-title" id="exampleModalLabel">Image</h3>
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										  <span aria-hidden="true">&times;</span>
+										</button>
+									  </div>
+									  <div class="modal-body">
+										<button type="button" class="btn btn-secondary" data-dismiss="modal">Add From Library	</button>&emsp;OR&emsp;
+										<button type="button" class="btn btn-primary" data-dismiss="modal">Upload</button><br><br>
+										<input type="text" class="form-control form-control-alternative" id="name" placeholder="Enter Title"/><br>
+										<h3>Preview</h3>
+										<div class="preview-img">
+											<img class="img-responsive" alt="Image placeholder" src="./assets/img/theme/team-4-800x800.jpg">
+										</div>
+									  </div>
+									  <div class="modal-footer">
+										<button type="button" onclick="myFunction1()" class="float-left btn btn-primary" data-dismiss="modal">Add</button>
+									  </div>
+									</div>
+								  </div>
+								</div>
+								
+								
+						</form>
+                        <!-- FORM END -->
+                        <!--<div class="card">                  
+                            <div class="table-responsive shadow">
+                                <!-- Projects table -->
+                          <!--      <table class="table align-items-center table-flush">
+                                    <thead class="thead-light">
+                                        <tr>
+                                            <th scope="col">Display Freeze</th>
+                                            <td scope="col">Display Extension: <span class="font-weight-bold">0.50 seconds</span></td>
+                                            <th scope="col" class="text-center">$250</th>
+											<td class="text-center actions">
+                                                <a href="#" title="Edit">
+                                                    <span class="fas fa-pencil-alt" aria-hidden="true"></span>
+                                                </a>
+                                                <a href="#" title="Delete">
+                                                    <span class="fas fa-trash" aria-hidden="true"></span>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </thead>
+                                </table>
+                            </div>
+						</div>-->
+						
+                  </div>              
+              </div>
+              <!-- Footer -->
+              <footer class="footer">
+                  <div class="row align-items-center justify-content-xl-between">
+                      <div class="col-xl-6">
+                          <div class="copyright text-center text-xl-left text-muted">
+                              &copy; 2018 <a href="#" class="font-weight-bold ml-1" target="_blank">Lectrefy</a>
+                        </div>
+                      </div>
+                  </div>
+              </footer>
+          </div>
+      </div>
+  </div>
