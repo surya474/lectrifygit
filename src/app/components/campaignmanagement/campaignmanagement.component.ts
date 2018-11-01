@@ -1,6 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
 import {MatPaginator, MatSort, MatTableDataSource} from '@angular/material';
+import { CampaignmangmntService } from 'src/app/services/campaignmangmnt.service';
 
 export interface UserData {
   campaignname: string;
@@ -32,7 +33,7 @@ export class CampaignmanagementComponent implements OnInit {
 
   @ViewChild(MatPaginator) paginator: MatPaginator;
   @ViewChild(MatSort) sort: MatSort;
-  constructor(public router:Router) { 
+  constructor(public router:Router, private  campaignService:  CampaignmangmntService) { 
   
     const users = Array.from({length: 100}, (_, k) => createNewUser(k + 1));
 
@@ -40,6 +41,7 @@ export class CampaignmanagementComponent implements OnInit {
     this.dataSource = new MatTableDataSource(users);
  
   }
+
   applyFilter(filterValue: string) {
     this.dataSource.filter = filterValue.trim().toLowerCase();
    
@@ -61,7 +63,18 @@ export class CampaignmanagementComponent implements OnInit {
   }
 //  routerLink="home/createcampaign
 
+//api calling for retriving campaigns
+getCampaigns(){
+  this.campaignService.getAllCampaigns().subscribe((data) => {
+     // this.contacts  =  data;
+      console.log(data);
+  });
+
 }
+
+}
+
+
 function createNewUser(id: number): UserData {
   let name=Campaignname[id]
   let color=Color[id]
