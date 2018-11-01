@@ -7,6 +7,7 @@ import { CreatecampaignComponent } from '../components/createcampaign/createcamp
 import { InventorymanageComponent } from '../components/inventortyManagement/inventorymanage/inventorymanage.component';
 import { ContentlibhomeComponent } from '../components/ContentLibrary/contentlibhome/contentlibhome.component';
 import { CreatecontentComponent } from '../components/ContentLibrary/createcontent/createcontent.component';
+import { EditcampaignComponent } from '../components/editcampaign/editcampaign.component';
 
 
 const routes: Routes = [
@@ -31,6 +32,10 @@ const routes: Routes = [
             {
                 path:'createcampaign',
                 component: CreatecampaignComponent
+            },
+            {
+                path:'editcamp',
+                component:EditcampaignComponent
             }
         ]
 
@@ -56,9 +61,6 @@ const routes: Routes = [
         path:'createcontent',
        component:CreatecontentComponent
       }
-     
-
-
 ]
     }
     

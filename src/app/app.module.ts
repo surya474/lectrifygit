@@ -16,6 +16,7 @@ import { MatInputModule, MatIconModule } from '@angular/material';
 import { InventorymanageComponent } from './components/inventortyManagement/inventorymanage/inventorymanage.component';
 import { ContentlibhomeComponent } from './components/ContentLibrary/contentlibhome/contentlibhome.component';
 import { CreatecontentComponent } from './components/ContentLibrary/createcontent/createcontent.component';
+import { EditcampaignComponent } from './components/editcampaign/editcampaign.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { CreatecontentComponent } from './components/ContentLibrary/createconten
     CreatecampaignComponent,
     InventorymanageComponent,
     ContentlibhomeComponent,
-    CreatecontentComponent
+    CreatecontentComponent,
+    EditcampaignComponent
   ],
   imports: [
     BrowserModule,   
